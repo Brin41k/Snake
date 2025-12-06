@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="CONSOLE">
+      <PatternLayout pattern="%d [%t] %5p %c{1.} - %m%n"/>
+    </Console>
+	<File name="AppFile" filename="logs/app.log" append="true">
+		<PatternLayout pattern="[%d] [%p] %c - %m%n"/>
+		<Filters>
+			<ThresholdFilter level="info"/>
+		</Filters>
+	</File>
+  </Appenders>
+  <Loggers>
+	<Root level="info">
+		<AppenderRef ref="CONSOLE"/>
+		<AppenderRef ref="AppFile"/>
+    </Root>
+  </Loggers>
+</Configuration>
