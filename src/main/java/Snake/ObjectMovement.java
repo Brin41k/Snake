@@ -24,10 +24,10 @@ public class ObjectMovement {
      * Задание случайного угла движения объекта.
      */
     public void setRandDir() {
+        log.info("Задана случайное направление движения змейки под углом");
         double angle = Math.random() * Math.PI * 2;
         vx = Math.cos(angle) * speed;
         vy = Math.sin(angle) * speed;
-        log.info("Задана случайное направление движения змейки под углом {}", angle);
     }
 
     /**
