@@ -88,7 +88,7 @@ public class ObjectMovement {
      * Изменяет вектор направления движения объекта для соответствия значению скорости его перемещения.
      */
     public void normalizeToSpeed() {
-        double len = Math.sqrt(vx*vx+ vy*vy);
+        double len = Math.sqrt(vx*vx + vy*vy);
         if (len == 0) return;
 
         vx = (vx / len) * speed;
