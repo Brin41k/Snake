@@ -7,6 +7,9 @@ import Snake.ObjectSnake;
 
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
+/**
+ * <b>Тестирование</b> методов класса {@link Snake.ObjectSnake}
+ */
 public class ObjectSnakeTest {
 
     /**

@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * <b>Тестирование</b> методов класса {@link ObjectMovement}
+ */
 public class ObjectMovementTest {
 
     /**
