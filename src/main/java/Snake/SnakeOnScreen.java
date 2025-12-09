@@ -15,7 +15,9 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
-
+/**
+ * <b>Запуск</b> программы и графического интерфейса.
+ */
 public class SnakeOnScreen extends Application {
 
     private static final Logger log = LogManager.getLogger(SnakeOnScreen.class);

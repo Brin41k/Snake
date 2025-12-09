@@ -3,15 +3,13 @@ package Snake;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * <b>Обработка исключений</b> передаваемых параметров скорости и длины хвоста змейки. <br>
+ * Используется в {@link SnakeOnScreen#main(String[])} перед запуском графического интерфейса.
+ */
 public class SnakeExceptions {
 
     private static final Logger log = LogManager.getLogger(SnakeExceptions.class);
-
-    /**
-     * <b>Обработка исключений</b> передаваемых параметров скорости и длины хвоста змейки. <br>
-     * Используется в {@link SnakeOnScreen#main(String[])} перед запуском графического интерфейса.
-     */
-    private SnakeExceptions() {}
 
     /**
      * Проверка переданного значения скорости змейки. <br>

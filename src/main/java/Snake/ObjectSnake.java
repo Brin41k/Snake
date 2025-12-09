@@ -9,6 +9,9 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <b>Объект-змейка</b> и его параметры.
+ */
 public class ObjectSnake {
     private final List<Circle> body = new ArrayList<>();
 

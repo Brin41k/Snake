@@ -3,6 +3,10 @@ package Snake;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * Параметры <b>перемещения объекта</b>. <br>
+ * Используется в {@link ObjectSnake} для регулировки движения и скорости объекта-змейки.
+ */
 public class ObjectMovement {
 
     private double vx;
@@ -24,7 +28,7 @@ public class ObjectMovement {
      * Задание случайного угла движения объекта.
      */
     public void setRandDir() {
-        log.info("Задана случайное направление движения змейки под углом");
+        log.info("Задана случайное направление движения змейки");
         double angle = Math.random() * Math.PI * 2;
         vx = Math.cos(angle) * speed;
         vy = Math.sin(angle) * speed;
@@ -94,5 +98,4 @@ public class ObjectMovement {
         vx = (vx / len) * speed;
         vy = (vy/len) * speed;
     }
-
 }
